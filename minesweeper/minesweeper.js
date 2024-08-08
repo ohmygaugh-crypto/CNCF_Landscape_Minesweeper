@@ -25,6 +25,12 @@ function reveal(x, y) {
 
   grid[x][y].isRevealed = true;
 
+  // Update the cell element to remove the background image
+  const cellElement = document.querySelector(`.grid .cell:nth-child(${y * WIDTH + x + 1})`);
+  cellElement.classList.remove('hidden');
+  cellElement.classList.add('revealed');
+  cellElement.style.backgroundImage = 'none';
+
   if (firstMove && !gameOver) {
     firstMove = false;
     if (grid[x][y].isMine) {
@@ -232,11 +238,39 @@ function init(width, height) {
   }
 
   // create the game grid
+  const backgroundImages = [
+    'public/aerakimesh-icon-color.png',
+    'public/akri-icon-color.png',
+    'public/antrea-icon-color.png',
+    'public/argo-icon-color.png',
+    'public/armada-icon-color.png',
+    'public/artifachub-icon-color.png',
+    'public/athenz-icon-color.png',
+    'public/1gpt.png',
+    'public/3dmurk.png',
+    'public/backstage-icon-color.png',
+    'public/bfe-icon-color.png',
+    'public/buildpacks-icon-color.png',
+    'public/capsule-icon-color.png',
+    'public/carina-icon-color.png',
+    'public/carvel-icon-color.png',
+    'public/cdk8s-icon-color.png',
+    'public/cert-manager-icon-color.png',
+    'public/chaosblade-icon-color.png',
+    'public/murk.png',
+
+    
+  ];
+
   for (let y = 0; y < HEIGHT; y++) {
     for (let x = 0; x < WIDTH; x++) {  
       const cellElement = document.createElement('div');
       cellElement.classList.add('cell');
       cellElement.classList.add('hidden');
+
+      const backgroundImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
+      cellElement.style.backgroundImage = `url(${backgroundImage})`;
+
       cellElement.addEventListener('click', () => {
         /* check the gameOver variable here and return immediately if it is true */
         if (gameOver) {
