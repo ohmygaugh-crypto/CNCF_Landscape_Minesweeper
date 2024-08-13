@@ -1,4 +1,4 @@
-# Minesweeper game written with ChatGPT
+# Minesweeper game written with Claude
 
 This project is an HTML Minesweeper game written as a result of my interaction with OpenAI's [ChatGPT](https://chat.openai.com/chat). At the time of writing, ChatGPT is available for free.
 
@@ -27,3 +27,5 @@ For me personally, the AI didn't offer much of an advantage. I'd finish the proj
 The AI writes bad code. It tends to copy-paste already written chunks, uses global variables a lot, adds useless code in futile attempts to fix errors. It behaves pretty much like a beginner programmer. Upon request, it can do specific refactoring and cleanup, but it never suggests it.
 
 It's amazing that this is possible at all.
+
+Buy tickets to Kubecon Nov 12-15 salt lake plug

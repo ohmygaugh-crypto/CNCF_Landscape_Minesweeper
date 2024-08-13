@@ -183,6 +183,13 @@ function rightClick(x, y) {
   }
 }
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 function init(width, height) {
   // Get the grid element
   const gridElement = document.querySelector('.grid');
@@ -258,21 +265,185 @@ function init(width, height) {
     'public/cert-manager-icon-color.png',
     'public/chaosblade-icon-color.png',
     'public/murk.png',
-
-    
+    'public/chaosmesh-icon-color.png',
+    'public/chubaofs-icon-color.png',
+    'public/cilium_icon-color.png',
+    'public/cloudcustodian-icon-color.png',
+    'public/cloudevents-icon-color.png',
+    'public/clusternet-icon-color.png',
+    'public/clusterpedia-icon-color.png',
+    'public/cncf-distribution-icon-color.png',
+    'public/cni-icon-color.png',
+    'public/confidential-containers-icon-color.png',
+    'public/connect-rpc-color.png',
+    'public/containerd-icon-color.png',
+    'public/containerssh-icon-dark.png',
+    'public/contour-icon-color.png',
+    'public/copa-icon-color.png',
+    'public/coredns-icon-color.png',
+    'public/cortex-icon-color.png',
+    'public/crio-icon-color.png',
+    'public/crossplane-icon-color.png',
+    'public/cubefs-icon-color.png',
+    'public/curve_icon_color.png',
+    'public/dapr-icon-color.png',
+    'public/devfile-icon-color.png',
+    'public/devstream-icon-color.png',
+    'public/dex-icon-color.png',
+    'public/dragonfly-icon-color.png',
+    'public/easegress-icon-color.png',
+    'public/emissary-ingress-icon-color.png',
+    'public/envoy-icon-color.png',
+    'public/eraser-icon-color.png',
+    'public/eso-icon-color.png',
+    'public/etcd-icon-color.png',
+    'public/fabedge-color.png',
+    'public/falco-icon-color.png',
+    'public/fluentbit-icon-color.png',
+    'public/fluid-icon-color.png',
+    'public/flux-horizontal-color.png',
+    'public/grpc-icon-color.png',
+    'public/grpc-pancake-color.png',
+    'public/harbor-icon-color.png',
+    'public/headlamp-icon-color.png',
+    'public/helm-icon-color.png',
+    'public/hexa-icon-color.png',
+    'public/hwameistor-icon-color.png',
+    'public/in-toto-icon-color.png',
+    'public/inclavare-icon-color.png',
+    'public/inspektor-gadget-icon-color.png',
+    'public/istio-icon-color.png',
+    'public/jaeger-icon-color.png',
+    'public/k3s-icon-color.png',
+    'public/k8gb-icon-color.png',
+    'public/k8sgpt-icon-color.png',
+    'public/k8up-icon-color.png',
+    'public/kairos-icon-color.png',
+    'public/karmada-icon-color.png',
+    'public/kcl-icon-color.png',
+    'public/kcp-icon-color.png',
+    'public/keda-icon-color.png',
+    'public/kepler-icon-color.png',
+    'public/keptn-icon-color.png',
+    'public/keycloak-icon-color.png',
+    'public/keylime-icon-color.png',
+    'public/knative-icon-color.png',
+    'public/konveyor-icon-color.png',
+    'public/koordiantor-icon-color.png',
+    'public/krkn-icon-color.png',
+    'public/krustlet-icon-color.png',
+    'public/kuadrant-icon-color.png',
+    'public/kuasar-icon-white.png',
+    'public/kube-burner-icon-color.png',
+    'public/kube-ovn-icon-color.png',
+    'public/kube-rs-icon-black.png',
+    'public/kubean-icon-colordark.png',
+    'public/kubearmor-icon-color.png',
+    'public/kubedl-icon-color.png',
+    'public/kubeedge-icon-color.png',
+    'public/kubeflow-icon.png',
+    'public/kuberhealthy-icon-color.png',
+    'public/kubernetes-icon-color.png',
+    'public/kubescape-icon-color.png',
+    'public/kubeslice-icon-color.png',
+    'public/kubestellar-icon-color.png',
+    'public/kubevela-icon-color.png',
+    'public/kubevirt-icon-color.png',
+    'public/kubewarden-icon.png',
+    'public/kudo-icon-color.png',
+    'public/kueue-icon-color.png',
+    'public/kuma-icon-color.png',
+    'public/kured-icon-color.png',
+    'public/kyverno-icon-color.png',
+    'public/lima-horizontal-color.png',
+    'public/linkerd-icon-color.png',
+    'public/litmus-icon-color.png',
+    'public/logging-operator-icon-color.png',
+    'public/longhorn-icon-color.png',
+    'public/merbridge-icon-color.png',
+    'public/meshery-logo-light.png',
+    'public/metal3-icon-color.png',
+    'public/metallb-icon-color.png',
+    'public/microcks-icon-color.png',
+    'public/murk.png',
+    'public/nats-icon-color.png',
+    'public/networkservicemesh-icon-color.png',
+    'public/nocalhost-icon-color.png',
+    'public/notary-project-icon-color.png',
+    'public/ocm-icon-color.png',
+    'public/opa-icon-color.png',
+    'public/opcr-icon-color.png',
+    'public/opencost_icon_color.png',
+    'public/openfeature-icon-white.png',
+    'public/openfga-icon-color.png',
+    'public/openfunction-icon-color.png',
+    'public/openagitops-icon-color.png',
+    'public/openkruise-icon-black.png',
+    'public/opentelemetry-icon-color.png',
+    'public/openyurt-icon-color.png',
+    'public/operatorframework-icon-color.png',
+    'public/oras-horizontal-color.png',
+    'public/paralus-icon-color.png',
+    'public/parsec-icon-color.png',
+    'public/pipecd-icon-color.png',
+    'public/piraeus-icon-color.png',
+    'public/pixie-icon-color.png',
+    'public/porter-icon-color.png',
+    'public/pravega-icon-color.png',
+    'public/prometheus-icon-color.png',
+    'public/radius-icon-color.png',
+    'public/rook-icon-color.png',
+    'public/schemahero-icon-color.png',
+    'public/serverless-devs-icon-color.png',
+    'public/serverlessworkflow-icon-color.png',
+    'public/skooner-icon-color.png',
+    'public/slimtoolkit-icon-color.png',
+    'public/smp-light.png',
+    'public/spiderpool-icon-color.png',
+    'public/spiffe-icon-color.png',
+    'public/spire-icon-color.png',
+    'public/strimzi-icon-color.png',
+    'public/submariner-icon-color.png',
+    'public/superedge-icon-color.png',
+    'public/telepresence-icon-color.png',
+    'public/teller-icon-color.png',
+    'public/thanos-icon-color.png',
+    'public/tikv-icon-color.png',
+    'public/tinkerbell-icon-color-light.png',
+    'public/tremor-icon-color.png',
+    'public/trickster-icon-color.png',
+    'public/tuf-icon-color.png',
+    'public/vineyard-icon-color.png',
+    'public/virtualkubelet-icon-color.png',
+    'public/vitess-icon-color.png',
+    'public/volcano-icon-color.png',
+    'public/wasm-edge-runtime-icon-color.png',
+    'public/wasmcloud-icon_green.png',
+    'public/werf-icon-color.png',
+    'public/xline-icon-color.png',
+    'public/xregistry-icon-color-whitetext.png',
+    'public/zot-color-icon.png',
   ];
 
+  // Shuffle the images
+  shuffleArray(backgroundImages);
+
+  // Ensure each image is used at least once
+  let imageIndex = 0;
   for (let y = 0; y < HEIGHT; y++) {
-    for (let x = 0; x < WIDTH; x++) {  
+    for (let x = 0; x < WIDTH; x++) {
       const cellElement = document.createElement('div');
       cellElement.classList.add('cell');
       cellElement.classList.add('hidden');
 
-      const backgroundImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
-      cellElement.style.backgroundImage = `url(${backgroundImage})`;
+      // Assign an image to the cell
+      const image = backgroundImages[imageIndex];
+      cellElement.style.backgroundImage = `url(${image})`;
+
+      // Move to the next image, and wrap around if necessary
+      imageIndex = (imageIndex + 1) % backgroundImages.length;
 
       cellElement.addEventListener('click', () => {
-        /* check the gameOver variable here and return immediately if it is true */
         if (gameOver) {
           return;
         }
@@ -281,7 +452,6 @@ function init(width, height) {
       });
       cellElement.addEventListener('contextmenu', (event) => {
         event.preventDefault();
-        /* check the gameOver variable here and return immediately if it is true */
         if (gameOver) {
           return;
         }
@@ -300,6 +470,9 @@ function init(width, height) {
   // Set the gameOverElement and allClearElement variables
   gameOverElement = document.querySelector('.game-over');
   allClearElement = document.querySelector('.all-clear');  
+
+  // Initialize the minesLeftElement
+  minesLeftElement = document.getElementById('mines-left');
 }
 
 // define a function to render the game grid
@@ -335,20 +508,12 @@ function render(gridElement) {
     }
   }
 
-  /* create the minesLeftElement if it does not exist and update its innerText property */
-  if (!minesLeftElement) {
-    minesLeftElement = document.createElement('div');
-    document.body.appendChild(minesLeftElement);
+  /* update the minesLeftElement's innerText property with the flag emoji */
+  if (minesLeftElement) {
+    minesLeftElement.innerText = `⛳️ POC's left: ${minesLeft}`;
   }
-  minesLeftElement.innerText = `Mines left: ${minesLeft}`;
-
-  /* add this style to horizontally center the minesLeftElement */
-  minesLeftElement.style.textAlign = 'center';
 
   /* check the gameOver variable here and display a "game over" message if necessary */
-  minesLeftElement.innerText = `Mines left: ${minesLeft}`;
-  minesLeftElement.style.textAlign = 'center';
-
   if (gameOver) {
     let flags = 0;
     for (let x = 0; x < WIDTH; x++) {
@@ -422,6 +587,11 @@ function changeLevel(width, height, mines) {
 
   // initialize the new game
   init(width, height);
+
+  // Update the minesLeft count
+  if (minesLeftElement) {
+    minesLeftElement.innerText = `⛳️ POC's left: ${minesLeft}`;
+  }
 }
 
 
@@ -462,7 +632,7 @@ function displayGameOverMessage() {
 
   // If the game is over, display the message
   if (gameOver) {
-    gameOverElement.innerText = 'Game Over';
+    gameOverElement.innerText = 'Game Over | Vendor Locked';
   } else {
     // Otherwise, clear the message
     gameOverElement.innerText = '';

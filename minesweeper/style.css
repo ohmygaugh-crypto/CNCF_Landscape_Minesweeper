@@ -64,3 +64,83 @@
   #button-container {
     text-align: center;
   }
+  body {
+    background-image: url('public/1BIGlandscape.png');
+    background-size: 100%; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  /* Add styles for h3 elements */
+  h3 {
+  background-color: rgb(253, 252, 233); /* Set background color to white */
+  padding: 10px; /* Add padding for better readability */
+  border-radius: 50px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  display: inline-block; /* Ensure the background only covers the text */
+  }
+
+  ul {
+  background-color: rgb(253, 252, 233); /* Set background color to white */
+  padding: 20px; /* Add padding for better readability */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  display: inline-block; /* Ensure the background only covers the text */
+  }
+  .info-container {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1200px; /* Increased from 800px */
+    width: 95%; /* Use percentage to allow some margin on very wide screens */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .info-section {
+    margin-bottom: 20px;
+  }
+
+  .info-section:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    .info-container {
+      padding: 10px;
+    }
+  }
+  
+  .grid {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+
+  .grid table {
+    margin: 0 auto;
+  }
+
+  .grid td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .grid td {
+      width: 25px;
+      height: 25px;
+      font-size: 12px;
+    }
+  }
