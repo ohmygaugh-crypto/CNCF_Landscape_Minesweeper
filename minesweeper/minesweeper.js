@@ -480,28 +480,23 @@ function render(gridElement) {
   for (let y = 0; y < HEIGHT; y++) {
     for (let x = 0; x < WIDTH; x++) {
       const cellElement = gridElement.children[y * WIDTH + x];
-      cellElement.classList.remove('hidden');
-      cellElement.classList.remove('revealed');
-      cellElement.classList.remove('mine');
-      cellElement.classList.remove('flagged');
-      cellElement.classList.remove('revealed-mine');
-      cellElement.classList.remove('empty');
-      /* add this line to remove the .empty class */
+      cellElement.classList.remove('hidden', 'revealed', 'mine', 'flagged', 'revealed-mine', 'empty');
+      cellElement.innerText = '';
 
       if (grid[x][y].isRevealed) {
         cellElement.classList.add('revealed');
         if (grid[x][y].isMine) {
           cellElement.classList.add('revealed-mine');
+          cellElement.innerText = '💣';
+          cellElement.style.backgroundColor = 'red';
+        } else if (grid[x][y].surroundingMines === 0) {
+          cellElement.classList.add('empty');
         } else {
-          /* add the .empty class here if the cell has no surrounding mines */
-          if (grid[x][y].surroundingMines === 0) {
-            cellElement.classList.add('empty');
-          } else {
-            cellElement.innerText = grid[x][y].surroundingMines;
-          }            
+          cellElement.innerText = grid[x][y].surroundingMines;
         }
       } else if (grid[x][y].isFlagged) {
         cellElement.classList.add('flagged');
+        cellElement.innerText = '⛳️';
       } else {
         cellElement.classList.add('hidden');
       }
