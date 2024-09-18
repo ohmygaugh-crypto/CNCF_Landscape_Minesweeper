@@ -1,47 +1,164 @@
-<!doctype html>
-<html>
-<head>
-  <title>CNCF_Landscape_sweeper</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="info-container">
-    <h1>🪖CNCFsweeper💥</h1>
-    <h2 style="text-align: center;">Time: <span id="timer">0</span></h2>
-    <div id="button-container">
-      <button id="beginner">Beginner</button>
-      <button id="intermediate">Intermediate</button>  
-      <button id="expert">Expert</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNCFsweeper</title>
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, interactive-widget=resizes-content"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="color-scheme" content="light" />
+    <!-- <link rel="manifest" href="/manifest.json" /> -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://cncfsweeper.netlify.app" />
+    <meta property="og:type" content="game" />
+    <meta property="og:title" content="CNCFsweeper" />
+    <meta
+      property="og:description"
+      content="Adopt cloud infrastructure and tool providers while avoiding costly mishaps! Challenge your skills in this unique tech-themed clicker!"
+    />
+    <meta
+      property="og:image"
+      content="https://cncfsweeper.netlify.app/screenshot.png"
+    />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="885" />
+    <meta
+      property="og:image:alt"
+      content="Preview image of CNCFsweeper gameplay."
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="teedee.us" />
+    <meta property="twitter:url" content="https://cncfsweeper.netlify.app" />
+    <meta
+      name="twitter:image"
+      content="https://cncfsweeper.netlify.app/screenshot.png"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="icons.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-star"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg> -->
+          <div class="logo">🪖💥</div>
+          <h1>CNCFsweeper</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <nav id="nav-menu">
+          <a href="#">Home</a>
+          <a href="#howToPlay">How To Play</a>
+          <a href="#tips">Tips</a>
+          <!-- <a href="#section4">Contact</a> -->
+        </nav>
+      </div>
+    </header>
+
+    <div id="section1" class="">
+      <div class="background"></div>
+      <div class="game">
+        <div id="button-container">
+          <button id="beginner" class="success selected">Beginner</button>
+          <button id="intermediate" class="primary">Intermediate</button>
+          <button id="expert" class="danger">Expert</button>
+        </div>
+
+        <div id="grid" class="grid beginner">
+          <!-- this is where the game grid will be generated -->
+        </div>
+
+        <div class="flex-row stats">
+          <div>Time: <span id="timer">0</span></div>
+          <div id="mines-left"></div>
+        </div>
+      </div>
     </div>
-    
-    <div id="grid" class="grid">
-      <!-- this is where the game grid will be generated -->
-    </div>
-    
-    <div id="mines-left" style="text-align: center; margin-top: 10px;"></div>
-    
-    <div class="info-section">
-      <h3>How to play:</h3>
-      <ul>
-        <li>Left click to reveal a cell.</li>
-        <li>Right click to flag a cell as a mine.</li>
-        <li>Left click on a revealed cell with all neighboring mines flagged to reveal all neighboring cells.</li>
-        <li>Win the game by revealing all non-mine cells.</li>
-        <li>Lose the game by revealing a mine cell.</li>
-        <li>Use the level buttons to start a new game at a different difficulty level.</li>
-      </ul>
-    </div>
-    <div class="info-section">
-      <h3>Playing tips:</h3>
-      <ul>
-        <li>Try to use the fewest number of flags possible to win the game.</li>
-        <li>If you're unsure about a cell, leave it un-revealed. It's better to be safe than sorry!</li>
-        <li>Pay attention to the numbers on revealed cells. They indicate the number of mines in the surrounding 8 cells.</li>
-        <li>Use the numbers to your advantage and make deductions about the location of mines in the grid.</li>
-        <li>Use the timer to challenge yourself and try to beat your best time.</li>
-      </ul>
-    </div>
-  </div>
-  <script src="minesweeper.js"></script>
-</body>
+
+    <main>
+      <div class="container">
+        <section id="howToPlay" class="section">
+          <h2>How To Play</h2>
+          <div>
+            <ul>
+              <li>Left click to reveal a cell.</li>
+              <li>Right click to flag a cell as a mine.</li>
+              <li>
+                Left click on a revealed cell with all neighboring mines flagged
+                to reveal all neighboring cells.
+              </li>
+              <li>Win the game by revealing all non-mine cells.</li>
+              <li>Lose the game by revealing a mine cell.</li>
+              <li>
+                Use the level buttons to start a new game at a different
+                difficulty level.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="tips" class="section">
+          <h2>Tips</h2>
+          <ul>
+            <li>
+              Try to use the fewest number of flags possible to win the game.
+            </li>
+            <li>
+              If you're unsure about a cell, leave it un-revealed. It's better
+              to be safe than sorry!
+            </li>
+            <li>
+              Pay attention to the numbers on revealed cells. They indicate the
+              number of mines in the surrounding 8 cells.
+            </li>
+            <li>
+              Use the numbers to your advantage and make deductions about the
+              location of mines in the grid.
+            </li>
+            <li>
+              Use the timer to challenge yourself and try to beat your best
+              time.
+            </li>
+          </ul>
+        </section>
+
+        <footer>&copy; 2024 CNCFsweeper. All rights reserved.</footer>
+      </div>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
 </html>
