@@ -613,17 +613,29 @@ const beginnerButton = document.getElementById("beginner");
 const intermediateButton = document.getElementById("intermediate");
 
 // attach event listeners to the level buttons
-document.getElementById("beginner").addEventListener("click", () => {
+document.getElementById("beginner").addEventListener("click", (e) => {
+  document
+    .querySelector("#button-container .selected")
+    ?.classList.remove("selected");
+  e.target.classList.add("selected");
   gridElement.classList.remove("intermediate", "advanced");
   gridElement.classList.add("beginner");
   changeLevel(8, 8, 10);
 });
-document.getElementById("intermediate").addEventListener("click", () => {
+document.getElementById("intermediate").addEventListener("click", (e) => {
+  document
+    .querySelector("#button-container .selected")
+    ?.classList.remove("selected");
+  e.target.classList.add("selected");
   gridElement.classList.remove("beginner", "advanced");
   gridElement.classList.add("intermediate");
   changeLevel(16, 16, 40);
 });
-document.getElementById("expert").addEventListener("click", () => {
+document.getElementById("expert").addEventListener("click", (e) => {
+  document
+    .querySelector("#button-container .selected")
+    ?.classList.remove("selected");
+  e.target.classList.add("selected");
   gridElement.classList.remove("intermediate", "beginner");
   gridElement.classList.add("advanced");
   changeLevel(30, 16, 99);
