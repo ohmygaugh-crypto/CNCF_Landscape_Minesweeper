@@ -60,6 +60,11 @@ h1 {
   text-align: center;
 }
 
+#mines-left {
+  text-align: center;
+  margin-top: 10px;
+}
+
 #beginner,
 #intermediate,
 #expert {
