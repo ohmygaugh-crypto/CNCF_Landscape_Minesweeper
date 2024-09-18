@@ -1,0 +1,530 @@
+[class^="icon-"] {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-3dmurk {
+  background: url("icons.png") no-repeat -0px -0px;
+}
+.icon-aerakimesh-icon-color {
+  background: url("icons.png") no-repeat -0px -33px;
+}
+.icon-akri-icon-color {
+  background: url("icons.png") no-repeat -33px -0px;
+}
+.icon-antrea-icon-color {
+  background: url("icons.png") no-repeat -33px -33px;
+}
+.icon-argo-icon-color {
+  background: url("icons.png") no-repeat -0px -66px;
+}
+.icon-armada-icon-color {
+  background: url("icons.png") no-repeat -33px -66px;
+}
+.icon-artifacthub-icon-color {
+  background: url("icons.png") no-repeat -66px -0px;
+}
+.icon-athenz-icon-color {
+  background: url("icons.png") no-repeat -66px -33px;
+}
+.icon-backstage-icon-color {
+  background: url("icons.png") no-repeat -66px -66px;
+}
+.icon-bfe-icon-color {
+  background: url("icons.png") no-repeat -0px -99px;
+}
+.icon-buildpacks-icon-color {
+  background: url("icons.png") no-repeat -33px -99px;
+}
+.icon-capsule-icon-color {
+  background: url("icons.png") no-repeat -66px -99px;
+}
+.icon-carvel-icon-color {
+  background: url("icons.png") no-repeat -99px -0px;
+}
+.icon-cert-manager-icon-color {
+  background: url("icons.png") no-repeat -99px -33px;
+}
+.icon-chaosblade-icon-color {
+  background: url("icons.png") no-repeat -99px -66px;
+}
+.icon-carina-icon-color {
+  background: url("icons.png") no-repeat -99px -99px;
+}
+.icon-cdk8s-icon-color {
+  background: url("icons.png") no-repeat -0px -132px;
+}
+.icon-chaosmesh-icon-color {
+  background: url("icons.png") no-repeat -33px -132px;
+}
+.icon-chubaofs-icon-color {
+  background: url("icons.png") no-repeat -66px -132px;
+}
+.icon-cloudevents-icon-color {
+  background: url("icons.png") no-repeat -99px -132px;
+}
+.icon-cloudcustodian-icon-color {
+  background: url("icons.png") no-repeat -132px -0px;
+}
+.icon-cilium_icon-color {
+  background: url("icons.png") no-repeat -132px -33px;
+}
+.icon-clusternet-icon-color {
+  background: url("icons.png") no-repeat -132px -66px;
+}
+.icon-clusterpedia-icon-color {
+  background: url("icons.png") no-repeat -132px -99px;
+}
+.icon-cncf-distribution-icon-color {
+  background: url("icons.png") no-repeat -132px -132px;
+}
+.icon-cni-icon-color {
+  background: url("icons.png") no-repeat -0px -165px;
+}
+.icon-confidential-containers-icon {
+  background: url("icons.png") no-repeat -33px -165px;
+}
+.icon-connect-rpc-color {
+  background: url("icons.png") no-repeat -66px -165px;
+}
+.icon-containerd-icon-color {
+  background: url("icons.png") no-repeat -99px -165px;
+}
+.icon-containerssh-icon-dark {
+  background: url("icons.png") no-repeat -132px -165px;
+}
+.icon-contour-icon-color {
+  background: url("icons.png") no-repeat -165px -0px;
+}
+.icon-copa-icon-color {
+  background: url("icons.png") no-repeat -165px -33px;
+}
+.icon-coredns-icon-color {
+  background: url("icons.png") no-repeat -165px -66px;
+}
+.icon-cortex-icon-color {
+  background: url("icons.png") no-repeat -165px -99px;
+}
+.icon-crio-icon-color {
+  background: url("icons.png") no-repeat -165px -132px;
+}
+.icon-crossplane-icon-color {
+  background: url("icons.png") no-repeat -165px -165px;
+}
+.icon-cubefs-icon-color {
+  background: url("icons.png") no-repeat -0px -198px;
+}
+.icon-curve_icon_color {
+  background: url("icons.png") no-repeat -33px -198px;
+}
+.icon-dapr-icon-color {
+  background: url("icons.png") no-repeat -66px -198px;
+}
+.icon-devfile-icon-color {
+  background: url("icons.png") no-repeat -99px -198px;
+}
+.icon-devstream-icon-color {
+  background: url("icons.png") no-repeat -132px -198px;
+}
+.icon-dex-icon-color {
+  background: url("icons.png") no-repeat -165px -198px;
+}
+.icon-dragonfly-icon-color {
+  background: url("icons.png") no-repeat -198px -0px;
+}
+.icon-easegress-icon-color {
+  background: url("icons.png") no-repeat -198px -33px;
+}
+.icon-emissary-ingress-icon-color {
+  background: url("icons.png") no-repeat -198px -66px;
+}
+.icon-envoy-icon-color {
+  background: url("icons.png") no-repeat -198px -99px;
+}
+.icon-eraser-icon-color {
+  background: url("icons.png") no-repeat -198px -132px;
+}
+.icon-eso-icon-color {
+  background: url("icons.png") no-repeat -198px -165px;
+}
+.icon-etcd-icon-color {
+  background: url("icons.png") no-repeat -198px -198px;
+}
+.icon-fabedge-color {
+  background: url("icons.png") no-repeat -0px -231px;
+}
+.icon-falco-icon-color {
+  background: url("icons.png") no-repeat -33px -231px;
+}
+.icon-fluentbit-icon-color {
+  background: url("icons.png") no-repeat -66px -231px;
+}
+.icon-fluid-icon-color {
+  background: url("icons.png") no-repeat -99px -231px;
+}
+.icon-flux-horizontal-color {
+  background: url("icons.png") no-repeat -132px -231px;
+}
+.icon-grpc-icon-color {
+  background: url("icons.png") no-repeat -165px -231px;
+}
+.icon-grpc-pancake-color {
+  background: url("icons.png") no-repeat -198px -231px;
+}
+.icon-harbor-icon-color {
+  background: url("icons.png") no-repeat -231px -0px;
+}
+.icon-headlamp-icon-color {
+  background: url("icons.png") no-repeat -231px -33px;
+}
+.icon-helm-icon-color {
+  background: url("icons.png") no-repeat -231px -66px;
+}
+.icon-hexa-icon-color {
+  background: url("icons.png") no-repeat -231px -99px;
+}
+.icon-hwameistor-icon-color {
+  background: url("icons.png") no-repeat -231px -132px;
+}
+.icon-in-toto-icon-color {
+  background: url("icons.png") no-repeat -231px -165px;
+}
+.icon-inclavare-icon-color {
+  background: url("icons.png") no-repeat -231px -198px;
+}
+.icon-inspektor-gadget-icon-color {
+  background: url("icons.png") no-repeat -231px -231px;
+}
+.icon-istio-icon-color {
+  background: url("icons.png") no-repeat -0px -264px;
+}
+.icon-jaeger-icon-color {
+  background: url("icons.png") no-repeat -33px -264px;
+}
+.icon-k3s-icon-color {
+  background: url("icons.png") no-repeat -66px -264px;
+}
+.icon-k8gb-icon-color {
+  background: url("icons.png") no-repeat -99px -264px;
+}
+.icon-k8sgpt-icon-color {
+  background: url("icons.png") no-repeat -132px -264px;
+}
+.icon-k8up-icon-color {
+  background: url("icons.png") no-repeat -165px -264px;
+}
+.icon-kairos-icon-color {
+  background: url("icons.png") no-repeat -198px -264px;
+}
+.icon-karmada-icon-color {
+  background: url("icons.png") no-repeat -231px -264px;
+}
+.icon-kcl-icon-color {
+  background: url("icons.png") no-repeat -264px -0px;
+}
+.icon-kcp-icon-color {
+  background: url("icons.png") no-repeat -264px -33px;
+}
+.icon-keda-icon-color {
+  background: url("icons.png") no-repeat -264px -66px;
+}
+.icon-kepler-icon-color {
+  background: url("icons.png") no-repeat -264px -99px;
+}
+.icon-keptn-icon-color {
+  background: url("icons.png") no-repeat -264px -132px;
+}
+.icon-keycloak-icon-color {
+  background: url("icons.png") no-repeat -264px -165px;
+}
+.icon-keylime-icon-color {
+  background: url("icons.png") no-repeat -264px -198px;
+}
+.icon-knative-icon-color {
+  background: url("icons.png") no-repeat -264px -231px;
+}
+.icon-konveyor-icon-color {
+  background: url("icons.png") no-repeat -264px -264px;
+}
+.icon-koordinator-icon-color {
+  background: url("icons.png") no-repeat -0px -297px;
+}
+.icon-krkn-icon-color {
+  background: url("icons.png") no-repeat -33px -297px;
+}
+.icon-krustlet-icon-color {
+  background: url("icons.png") no-repeat -66px -297px;
+}
+.icon-kuadrant-icon-color {
+  background: url("icons.png") no-repeat -99px -297px;
+}
+.icon-kuasar-icon-white {
+  background: url("icons.png") no-repeat -132px -297px;
+}
+.icon-kube-burner-icon-color {
+  background: url("icons.png") no-repeat -165px -297px;
+}
+.icon-kube-ovn-icon-color {
+  background: url("icons.png") no-repeat -198px -297px;
+}
+.icon-kube-rs-icon-black {
+  background: url("icons.png") no-repeat -231px -297px;
+}
+.icon-kubean-icon-colordark {
+  background: url("icons.png") no-repeat -264px -297px;
+}
+.icon-kubearmor-icon-color {
+  background: url("icons.png") no-repeat -297px -0px;
+}
+.icon-kubedl-icon-color {
+  background: url("icons.png") no-repeat -297px -33px;
+}
+.icon-kubeedge-icon-color {
+  background: url("icons.png") no-repeat -297px -66px;
+}
+.icon-kubeflow-icon {
+  background: url("icons.png") no-repeat -297px -99px;
+}
+.icon-kuberhealthy-icon-color {
+  background: url("icons.png") no-repeat -297px -132px;
+}
+.icon-kubernetes-icon-color {
+  background: url("icons.png") no-repeat -297px -165px;
+}
+.icon-kubescape-icon-color {
+  background: url("icons.png") no-repeat -297px -198px;
+}
+.icon-kubeslice-icon-color {
+  background: url("icons.png") no-repeat -297px -231px;
+}
+.icon-kubestellar-icon-color {
+  background: url("icons.png") no-repeat -297px -264px;
+}
+.icon-kubevela-icon-color {
+  background: url("icons.png") no-repeat -297px -297px;
+}
+.icon-kubevirt-icon-color {
+  background: url("icons.png") no-repeat -0px -330px;
+}
+.icon-kubewarden-icon {
+  background: url("icons.png") no-repeat -33px -330px;
+}
+.icon-kudo-icon-color {
+  background: url("icons.png") no-repeat -66px -330px;
+}
+.icon-kueue-icon-color {
+  background: url("icons.png") no-repeat -99px -330px;
+}
+.icon-kuma-icon-color {
+  background: url("icons.png") no-repeat -132px -330px;
+}
+.icon-kured-icon-color {
+  background: url("icons.png") no-repeat -165px -330px;
+}
+.icon-kyverno-icon-color {
+  background: url("icons.png") no-repeat -198px -330px;
+}
+.icon-lima-horizontal-color {
+  background: url("icons.png") no-repeat -231px -330px;
+}
+.icon-linkerd-icon-color {
+  background: url("icons.png") no-repeat -264px -330px;
+}
+.icon-litmus-icon-color {
+  background: url("icons.png") no-repeat -297px -330px;
+}
+.icon-logging-operator-icon-color {
+  background: url("icons.png") no-repeat -330px -0px;
+}
+.icon-longhorn-icon-color {
+  background: url("icons.png") no-repeat -330px -33px;
+}
+.icon-merbridge-icon-color {
+  background: url("icons.png") no-repeat -330px -66px;
+}
+.icon-meshery-logo-light {
+  background: url("icons.png") no-repeat -330px -99px;
+}
+.icon-metal3-icon-color {
+  background: url("icons.png") no-repeat -330px -132px;
+}
+.icon-metallb-icon-color {
+  background: url("icons.png") no-repeat -330px -165px;
+}
+.icon-microcks-icon-color {
+  background: url("icons.png") no-repeat -330px -198px;
+}
+.icon-murk {
+  background: url("icons.png") no-repeat -330px -231px;
+}
+.icon-nats-icon-color {
+  background: url("icons.png") no-repeat -330px -264px;
+}
+.icon-networkservicemesh-icon-color-reversed {
+  background: url("icons.png") no-repeat -330px -297px;
+}
+.icon-nocalhost-icon-color {
+  background: url("icons.png") no-repeat -330px -330px;
+}
+.icon-notary-project-icon-color {
+  background: url("icons.png") no-repeat -0px -363px;
+}
+.icon-ocm-icon-color {
+  background: url("icons.png") no-repeat -33px -363px;
+}
+.icon-opa-icon-color {
+  background: url("icons.png") no-repeat -66px -363px;
+}
+.icon-opcr-icon-color {
+  background: url("icons.png") no-repeat -99px -363px;
+}
+.icon-opencost_icon_color {
+  background: url("icons.png") no-repeat -132px -363px;
+}
+.icon-openfeature-icon-white {
+  background: url("icons.png") no-repeat -165px -363px;
+}
+.icon-openfga-icon-color {
+  background: url("icons.png") no-repeat -198px -363px;
+}
+.icon-openfunction-icon-color {
+  background: url("icons.png") no-repeat -231px -363px;
+}
+.icon-opengitops-icon-color {
+  background: url("icons.png") no-repeat -264px -363px;
+}
+.icon-openkruise-icon-black {
+  background: url("icons.png") no-repeat -297px -363px;
+}
+.icon-opentelemetry-icon-color {
+  background: url("icons.png") no-repeat -330px -363px;
+}
+.icon-openyurt-icon-color {
+  background: url("icons.png") no-repeat -363px -0px;
+}
+.icon-operatorframework-icon-color {
+  background: url("icons.png") no-repeat -363px -33px;
+}
+.icon-oras-horizontal-color {
+  background: url("icons.png") no-repeat -363px -66px;
+}
+.icon-paralus-icon-color {
+  background: url("icons.png") no-repeat -363px -99px;
+}
+.icon-parsec-icon-color {
+  background: url("icons.png") no-repeat -363px -132px;
+}
+.icon-pipecd-icon-color {
+  background: url("icons.png") no-repeat -363px -165px;
+}
+.icon-piraeus-icon-color {
+  background: url("icons.png") no-repeat -363px -198px;
+}
+.icon-pixie-icon-color {
+  background: url("icons.png") no-repeat -363px -231px;
+}
+.icon-porter-icon-color {
+  background: url("icons.png") no-repeat -363px -264px;
+}
+.icon-pravega-icon-color {
+  background: url("icons.png") no-repeat -363px -297px;
+}
+.icon-prometheus-icon-color {
+  background: url("icons.png") no-repeat -363px -330px;
+}
+.icon-radius-icon-color {
+  background: url("icons.png") no-repeat -363px -363px;
+}
+.icon-rook-icon-color {
+  background: url("icons.png") no-repeat -0px -396px;
+}
+.icon-schemahero-icon-color {
+  background: url("icons.png") no-repeat -33px -396px;
+}
+.icon-serverless-devs-icon-color {
+  background: url("icons.png") no-repeat -66px -396px;
+}
+.icon-serverlessworkflow-icon-color {
+  background: url("icons.png") no-repeat -99px -396px;
+}
+.icon-skooner-icon-color {
+  background: url("icons.png") no-repeat -132px -396px;
+}
+.icon-slimtoolkit-icon-color {
+  background: url("icons.png") no-repeat -165px -396px;
+}
+.icon-smp-light {
+  background: url("icons.png") no-repeat -198px -396px;
+}
+.icon-spiderpool-icon-color {
+  background: url("icons.png") no-repeat -231px -396px;
+}
+.icon-spiffe-icon-color {
+  background: url("icons.png") no-repeat -264px -396px;
+}
+.icon-spire-icon-color {
+  background: url("icons.png") no-repeat -297px -396px;
+}
+.icon-strimzi-icon-color {
+  background: url("icons.png") no-repeat -330px -396px;
+}
+.icon-submariner-icon-color {
+  background: url("icons.png") no-repeat -363px -396px;
+}
+.icon-superedge-icon-color {
+  background: url("icons.png") no-repeat -396px -0px;
+}
+.icon-telepresence-icon-color {
+  background: url("icons.png") no-repeat -396px -33px;
+}
+.icon-teller-icon-color {
+  background: url("icons.png") no-repeat -396px -66px;
+}
+.icon-thanos-icon-color {
+  background: url("icons.png") no-repeat -396px -99px;
+}
+.icon-tikv-icon-color {
+  background: url("icons.png") no-repeat -396px -132px;
+}
+.icon-tinkerbell-icon-color-light {
+  background: url("icons.png") no-repeat -396px -165px;
+}
+.icon-tremor-icon-color {
+  background: url("icons.png") no-repeat -396px -198px;
+}
+.icon-trickster-icon-color {
+  background: url("icons.png") no-repeat -396px -231px;
+}
+.icon-tuf-icon-color {
+  background: url("icons.png") no-repeat -396px -264px;
+}
+.icon-vineyard-icon-color {
+  background: url("icons.png") no-repeat -396px -297px;
+}
+.icon-virtualkubelet-icon-color {
+  background: url("icons.png") no-repeat -396px -330px;
+}
+.icon-vitess-icon-color {
+  background: url("icons.png") no-repeat -396px -363px;
+}
+.icon-volcano-icon-color {
+  background: url("icons.png") no-repeat -396px -396px;
+}
+.icon-wasm-edge-runtime-icon-color {
+  background: url("icons.png") no-repeat -0px -429px;
+}
+.icon-wasmcloud-icon-green {
+  background: url("icons.png") no-repeat -33px -429px;
+}
+.icon-werf-icon-color {
+  background: url("icons.png") no-repeat -66px -429px;
+}
+.icon-xline-icon-color {
+  background: url("icons.png") no-repeat -99px -429px;
+}
+.icon-xregistry-icon-color-whitetext {
+  background: url("icons.png") no-repeat -132px -429px;
+}
+.icon-zot-color-icon {
+  background: url("icons.png") no-repeat -165px -429px;
+}
